@@ -1,0 +1,12 @@
+{
+  "name": "yohpal-search-system-90-plus-upgrade-pack",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build:api": "cd apps/api_nest && npm run build",
+    "build:worker": "cd apps/worker && npm run build",
+    "build:all": "npm run build:api && npm run build:worker",
+    "test:smoke": "node tests/smoke.search.js"
+  }
+}
